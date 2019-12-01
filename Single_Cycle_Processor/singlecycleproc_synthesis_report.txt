@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 24 01:15:17 2019
+# Process ID: 109287
+# Log file: /home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.runs/synth_3/SingleCycleProc.vds
+# Journal file: /home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.runs/synth_3/vivado.jou
+#-----------------------------------------------------------
+source SingleCycleProc.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+Command: synth_design -top SingleCycleProc -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -662 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1099.000 ; gain = 171.520 ; free physical = 310414 ; free virtual = 496464
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SingleCycleProc' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:43]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/instruction_memory.v:8]
+	Parameter T_rd bound to: 20 - type: integer 
+	Parameter MemSize bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (1#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/instruction_memory.v:8]
+INFO: [Synth 8-638] synthesizing module 'sign_extend' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:31]
+INFO: [Synth 8-256] done synthesizing module 'sign_extend' (2#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:31]
+INFO: [Synth 8-638] synthesizing module 'mux21' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:22]
+INFO: [Synth 8-256] done synthesizing module 'mux21' (3#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux21_5bit' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:26]
+INFO: [Synth 8-256] done synthesizing module 'mux21_5bit' (4#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:26]
+INFO: [Synth 8-638] synthesizing module 'registerfile' [/home/grads/a/amiya_1/ECEN651/lab_3/lab_3/lab_3.srcs/sources_1/new/register_file.v:23]
+INFO: [Synth 8-256] done synthesizing module 'registerfile' (5#1) [/home/grads/a/amiya_1/ECEN651/lab_3/lab_3/lab_3.srcs/sources_1/new/register_file.v:23]
+INFO: [Synth 8-638] synthesizing module 'SingleCycleControl' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/control.v:56]
+INFO: [Synth 8-256] done synthesizing module 'SingleCycleControl' (6#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/control.v:56]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/ALUControl.v:53]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (7#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/ALUControl.v:53]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/alu.v:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/alu.v:43]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [/home/grads/a/amiya_1/ECEN651/lab_3/lab_3/lab_3.srcs/sources_1/new/ram.v:22]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (9#1) [/home/grads/a/amiya_1/ECEN651/lab_3/lab_3/lab_3.srcs/sources_1/new/ram.v:22]
+INFO: [Synth 8-256] done synthesizing module 'SingleCycleProc' (10#1) [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/full_processor.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.297 ; gain = 207.816 ; free physical = 310370 ; free virtual = 496420
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.297 ; gain = 207.816 ; free physical = 310370 ; free virtual = 496420
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/constrs_1/new/AAA.xdc]
+Finished Parsing XDC File [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/constrs_1/new/AAA.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1604.117 ; gain = 0.000 ; free physical = 310054 ; free virtual = 496105
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310063 ; free virtual = 496113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310063 ; free virtual = 496113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310063 ; free virtual = 496113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rf_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[31]" won't be mapped to RAM because it is too sparse
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/grads/a/amiya_1/ECEN651/lab_5/lab_5/lab_5.srcs/sources_1/new/alu.v:63]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5562] The signal datamem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310045 ; free virtual = 496095
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	 137 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	  15 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	  14 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SingleCycleProc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	 137 Input     32 Bit        Muxes := 1     
+Module sign_extend 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module mux21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux21_5bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module registerfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module SingleCycleControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 8     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      4 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  15 Input     32 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310045 ; free virtual = 496095
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310045 ; free virtual = 496095
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310045 ; free virtual = 496095
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-5562] The signal DataMemory/datamem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++----------------+------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------+
+|Module Name     | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name         | 
++----------------+------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------+
+|SingleCycleProc | DataMemory/datamem_reg | 64 x 32(READ_FIRST)    | W |   | 64 x 32(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | SingleCycleProc/extram__2 | 
++----------------+------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------+
+
+Note: The table shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[31]_LDC ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[31]_C ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[31]_P ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[30]_LDC ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[30]_C ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[30]_P ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[29]_LDC ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[29]_C ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[29]_P ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[0]_LDC ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[0]_C ) is unused and will be removed from module SingleCycleProc.
+WARNING: [Synth 8-3332] Sequential element (\program_counter_reg[0]_P ) is unused and will be removed from module SingleCycleProc.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310027 ; free virtual = 496077
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310027 ; free virtual = 496077
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 310027 ; free virtual = 496077
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 309968 ; free virtual = 496018
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5562] The signal DataMemory/datamem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1604.117 ; gain = 676.637 ; free physical = 309964 ; free virtual = 496014
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \DataMemory/datamem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311278 ; free virtual = 497332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    30|
+|3     |LUT1     |     4|
+|4     |LUT2     |   123|
+|5     |LUT3     |    80|
+|6     |LUT4     |   198|
+|7     |LUT5     |   203|
+|8     |LUT6     |  1136|
+|9     |MUXF7    |   297|
+|10    |MUXF8    |    64|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |  1052|
+|13    |FDPE     |    28|
+|14    |LDC      |    28|
+|15    |IBUF     |    30|
+|16    |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------+-------------+------+
+|      |Instance          |Module       |Cells |
++------+------------------+-------------+------+
+|1     |top               |             |  3307|
+|2     |  DataMemory      |DataMemory   |    69|
+|3     |  mux_jump_branch |mux21        |   280|
+|4     |  registerfile    |registerfile |  2754|
++------+------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497333
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1708.898 ; gain = 191.078 ; free physical = 311279 ; free virtual = 497333
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1708.898 ; gain = 781.418 ; free physical = 311279 ; free virtual = 497332
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SingleCycleProc' is not ideal for floorplanning, since the cellview 'registerfile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 1080 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LDC => LDCE: 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1740.914 ; gain = 699.918 ; free physical = 311279 ; free virtual = 497332
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1772.938 ; gain = 0.000 ; free physical = 311277 ; free virtual = 497331
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 24 01:16:19 2019...
